@@ -1,0 +1,32 @@
+h1{
+  text-align: center;
+  font-family: 'GFS Neohellenic', sans-serif;
+  background-color: #CAD2C5
+}
+.art{
+  margin:auto;
+}
+
+body{
+  background-color: #CAD2C5
+}
+td{
+  height:300px;
+  width: 150px;
+  border: 20px #CAD2C5;
+}
+#one{
+  background-color: #A7E2E3;
+}
+#two{
+  background-color: #D2FDFF
+}
+#three{
+  background-color: #ABEBD2
+}
+#four{
+  background-color: #62929E
+}
+#five{
+  background-color: #546A7B
+}

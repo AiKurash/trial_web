@@ -1,8 +1,17 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 {% extends "basic_app/base.html" %}
   {% block body_block %}
-    <h1>Elysian Coder :) </h1>
-    <h1>I need this website to work</h1>
-    <h1> {{ text|upper}} </h1>
-    <h1> {{ number|add:"99" }} </h1>
+    <title>Elysian Coder</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <h1>(adj.) Divinely inspired; Peaceful and Elegant Programmer</h1>
+    <table class='art'>
+  <tr>
+    <td id='one'></td>
+    <td id='two'></td>
+    <td id='three'></td>
+    <td id='four'></td>
+    <td id='five'></td>
+  </tr>
+</table>
   {% endblock %}
