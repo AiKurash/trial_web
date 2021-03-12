@@ -26,12 +26,16 @@ SECRET_KEY = 'hzl+#!4myxpgr9y-!5-jzyf45#kt@66k9lr-fzt2a^cc^ixf&q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['lucy20200.pythonanywhere.com']
+ALLOWED_HOSTS = ['lucy20200.pythonanywhere.com','127.0.0.1']
+
+DEFAULT_FROM_EMAIL = 'bewater475@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'sendemail.apps.SendemailConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'basic_app',
+
+
 ]
 
 MIDDLEWARE = [
